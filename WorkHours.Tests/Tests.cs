@@ -31,9 +31,9 @@
 
             var lunchDuration = new TimeSpan(0, 1, 0, 0); // 1 hour
 
-            var startTime = new DateTime(2015, 08, 5, 9, 30, 0); // Should have starter work at at 0930
+            var startTime = new DateTime(2015, 6, 5, 9, 30, 0); // Should have starter work at at 0930
 
-            var finishTime = new DateTime(2015, 06, 5, 9, 0, 0); // Finishes work at 1800
+            var finishTime = new DateTime(2015, 6, 5, 18, 0, 0); // Finishes work at 1800
 
             var calculatedStartTime = new WorkHours.Core.WorkHours(workingDuration, lunchDuration).CalculateStartTime(finishTime);
 
