@@ -22,14 +22,14 @@
         {
             this.StartTime = startTime;
 
-            return StartTime + WorkingDuration + LunchDuration;
+            return this.StartTime + this.WorkingDuration + this.LunchDuration;
         }
 
         public DateTime CalculateStartTime(DateTime finishTime)
         {
             this.FinishTime = finishTime;
 
-            return FinishTime - WorkingDuration - LunchDuration;
+            return this.FinishTime - this.WorkingDuration - this.LunchDuration;
         }
     }
 }

@@ -2,9 +2,9 @@
 {
     using System;
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var workingDuration = new TimeSpan(0, 7, 30, 0);
 
