@@ -19,7 +19,7 @@
 
             var finishTime = new DateTime(2015, 06, 24, 16, 30, 0); // Finishes work at 1630
 
-            var calculatedFinishTime = new WorkHours.Core.WorkHours(workingDuration, lunchDuration).CalculateFinishTime(startTime);
+            var calculatedFinishTime = new Core.WorkHours(workingDuration, lunchDuration).CalculateFinishTime(startTime);
 
             calculatedFinishTime.Should().Be(finishTime);
         }
@@ -35,7 +35,7 @@
 
             var finishTime = new DateTime(2015, 6, 5, 18, 0, 0); // Finishes work at 1800
 
-            var calculatedStartTime = new WorkHours.Core.WorkHours(workingDuration, lunchDuration).CalculateStartTime(finishTime);
+            var calculatedStartTime = new Core.WorkHours(workingDuration, lunchDuration).CalculateStartTime(finishTime);
 
             calculatedStartTime.Should().Be(startTime);
         }
